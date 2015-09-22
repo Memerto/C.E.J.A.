@@ -10,3 +10,7 @@ C:\Users\Meme\Google Drive\Desarrollo en .Net\Trabajo\Prototipo1DG\Prototipo1DG\
 C:\Users\Meme\Google Drive\Desarrollo en .Net\Trabajo\Prototipo1DG\Prototipo1DG\bin\Prototipo1DG.pdb
 C:\Users\Meme\Google Drive\Desarrollo en .Net\Trabajo\Prototipo1DG\Prototipo1DG\obj\Debug\Prototipo1DG.dll
 C:\Users\Meme\Google Drive\Desarrollo en .Net\Trabajo\Prototipo1DG\Prototipo1DG\obj\Debug\Prototipo1DG.pdb
+C:\Users\Meme\Documents\GitHub\C.E.J.A\Prototipo1DG\bin\Prototipo1DG.dll
+C:\Users\Meme\Documents\GitHub\C.E.J.A\Prototipo1DG\bin\Prototipo1DG.pdb
+C:\Users\Meme\Documents\GitHub\C.E.J.A\Prototipo1DG\obj\Debug\Prototipo1DG.dll
+C:\Users\Meme\Documents\GitHub\C.E.J.A\Prototipo1DG\obj\Debug\Prototipo1DG.pdb
