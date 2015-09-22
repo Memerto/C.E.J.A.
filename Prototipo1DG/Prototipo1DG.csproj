@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -14,6 +15,11 @@
     <AssemblyName>Prototipo1DG</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -57,6 +63,8 @@
     <Content Include="bootstrap\js\bootstrap.js" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\npm.js" />
+    <Content Include="CuentaUsuario.aspx" />
+    <Content Include="CuentaUsuarioAdministrador.aspx" />
     <Content Include="dist\css\AdminLTE.css" />
     <Content Include="dist\css\AdminLTE.min.css" />
     <Content Include="dist\css\skins\skin-black-light.css" />
@@ -124,6 +132,7 @@
     <Content Include="Gruntfile.js" />
     <Content Include="Hijo1.aspx" />
     <Content Include="Hijo2.aspx" />
+    <Content Include="HijoAD1.aspx" />
     <Content Include="index.html" />
     <Content Include="index2.html" />
     <Content Include="Inicio.aspx" />
@@ -887,6 +896,20 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CuentaUsuario.aspx.cs">
+      <DependentUpon>CuentaUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuentaUsuario.aspx.designer.cs">
+      <DependentUpon>CuentaUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CuentaUsuarioAdministrador.aspx.cs">
+      <DependentUpon>CuentaUsuarioAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CuentaUsuarioAdministrador.aspx.designer.cs">
+      <DependentUpon>CuentaUsuarioAdministrador.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Hijo1.aspx.cs">
       <DependentUpon>Hijo1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -900,6 +923,13 @@
     </Compile>
     <Compile Include="Hijo2.aspx.designer.cs">
       <DependentUpon>Hijo2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HijoAD1.aspx.cs">
+      <DependentUpon>HijoAD1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HijoAD1.aspx.designer.cs">
+      <DependentUpon>HijoAD1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.Master.cs">
       <DependentUpon>Home.Master</DependentUpon>
@@ -915,12 +945,12 @@
     <Compile Include="Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
     </Compile>
-    <Compile Include="inicioHijo1.master.cs">
-      <DependentUpon>inicioHijo1.master</DependentUpon>
+    <Compile Include="MasterAdministrador.Master.cs">
+      <DependentUpon>MasterAdministrador.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="inicioHijo1.master.designer.cs">
-      <DependentUpon>inicioHijo1.master</DependentUpon>
+    <Compile Include="MasterAdministrador.Master.designer.cs">
+      <DependentUpon>MasterAdministrador.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -1019,7 +1049,7 @@
     <None Include="changelog" />
     <None Include="composer.json" />
     <Content Include="Home.Master" />
-    <Content Include="inicioHijo1.master" />
+    <Content Include="MasterAdministrador.Master" />
     <None Include="package.json" />
     <None Include="plugins\ckeditor\CHANGES.md" />
     <None Include="plugins\ckeditor\LICENSE.md" />
@@ -1043,15 +1073,20 @@
     <None Include="plugins\input-mask\phone-codes\phone-be.json" />
     <None Include="plugins\input-mask\phone-codes\phone-codes.json" />
   </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>27787</DevelopmentServerPort>
+          <DevelopmentServerPort>40104</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

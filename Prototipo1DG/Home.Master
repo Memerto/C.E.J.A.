@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Blank Page</title>
+    <title>C.E.J.A. | Inicio</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -151,7 +151,7 @@
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="#" class="btn btn-default btn-flat">Editar Perfil</a>
+                      <a href="../../CuentaUsuario.aspx" class="btn btn-default btn-flat">Editar Perfil</a>
                     </div>
                     <div class="pull-right">
                       <a href="#" class="btn btn-default btn-flat">Cerrar Sesion</a>
@@ -210,7 +210,7 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="../../Hijo1.aspx"><i class="fa fa-circle-o"></i> Ramo 1(ejemplo)</a></li>
-                <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Ramo 2(ejemplo)</a></li>
+                <li><a href="../../HijoAD1.aspx"><i class="fa fa-circle-o"></i> Ramo 2(ejemplo)</a></li>
               </ul>
             </li>
             <li class="treeview">
