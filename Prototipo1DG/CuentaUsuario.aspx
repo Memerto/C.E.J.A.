@@ -5,7 +5,7 @@
 
     <div class="row">
         
-    <div class="col-md-3">
+    <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
 
               <!-- Profile Image -->
               <div class="box box-primary">
