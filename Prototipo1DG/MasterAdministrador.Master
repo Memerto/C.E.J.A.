@@ -192,11 +192,43 @@
             </li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-book"></i> <span>Areas</span> <i class="fa fa-angle-left pull-right"></i>
+                <i class="fa fa-book"></i> <span>Secciones</span> 
+                <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="../../Hijo1.aspx"><i class="fa fa-circle-o"></i> Informatica</a></li>
-                <li><a href="../../Hijo2.html"><i class="fa fa-circle-o"></i> Cocina</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i> Cocina <i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Reposteria</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Banqueteria</a></li>
+                    </ul>
+                </li>
+              </ul>
+              <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-circle-o"></i> Electronica <i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Fundamentos Basicos</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Electronica Avanzada</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Arduino</a></li>
+                    </ul>
+                </li>
+              </ul>
+              <ul class="treeview-menu"> 
+                <li><a href="#"><i class="fa fa-circle-o"></i> Informatica <i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                  <li><a href="../../Hijo1.aspx"><i class="fa fa-circle-o"></i> Softwares</a></li>
+                  <li><a href="../../Hijo1.aspx"><i class="fa fa-circle-o"></i> Programacion <i class="fa fa-angle-left pull-right"></i></a>
+                    <ul class="treeview-menu">
+                        <li><a href="#"><i class="fa fa-circle-o"></i> .NET</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Java</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Arduino</a></li>
+                    </ul>
+                    </li>
+                  <li><a href="../../Hijo2.aspx"><i class="fa fa-circle-o"></i> Desarrollo Web</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i> Hardware</a></li>
+                  <li><a href="#"><i class="fa fa-circle-o"></i> Cocina</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#loginModal">content</a></li>
+                  </ul>
+              </li>
               </ul>
             </li>
             <li class="treeview">
@@ -207,36 +239,20 @@
                 <span class="label label-primary pull-right">4</span>
                 -->
               </a>
-             </li>
-            <li>
-              <a href="../widgets.html">
-                <i class="fa fa-question"></i> <span>Pendiente</span> <i class="fa fa-angle-left pull-right"></i>
-              </a>
-            </li>
+             </li>         
+              <asp:ContentPlaceHolder ID="Pendientes" runat="server">
+              </asp:ContentPlaceHolder>
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-binoculars"></i>
                 <span>Temas de Interés</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
-              <ul class="treeview-menu">
-                <li><a href="../charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-                <li><a href="../charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-                <li><a href="../charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-                <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-              </ul>
+              <asp:ContentPlaceHolder ID="InteresesUsuario" runat="server">
+              </asp:ContentPlaceHolder>
             </li>
-            <li class="treeview">
-            <a href="#">
-            <i class="fa fa-edit"></i><span>Administrador</span>
-            <i class="fa fa-angle-left pull-right"></i>
-            </a>
-            <ul class="treeview-menu">
-            <li><a ><i class="fa fa-circle-o"></i> Control de Usuario</a></li>
-            <li><a ><i class="fa fa-circle-o"></i> Evaluar Propuestas</a></li>
-            <li><a ><i class="fa fa-circle-o"></i> Nose</a></li>
-            </ul>
-            </li>
+            <asp:ContentPlaceHolder ID="Administrador" runat="server">
+            </asp:ContentPlaceHolder>         
           </ul>
         </section>
         <!-- /.sidebar -->
@@ -456,6 +472,77 @@
     <script src="../../dist/js/app.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="../../dist/js/demo.js"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+     <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="container sign-in-up">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-1">
+      <br>
+      <!-- Nav tabs -->
+      <div class="text-center">
+        <div class="btn-group">
+          <a href="#new" role="tab" data-toggle="tab" class="big btn btn-primary"><i class="fa fa-plus"></i> Nuevo Usuario</a>
+          <a href="#user" role="tab" data-toggle="tab" class="big btn btn-danger"><i class="fa fa-user"></i> Ya tengo una cuenta</a>
+        </div>
+      </div>
+      <div class="tab-content">
+        <div class="tab-pane fade in active" id="new">
+          <br>
+          <fieldset>
+            <div class="form-group">
+              <div class="right-inner-addon">
+                <i class="fa fa-envelope"></i>
+                <input class="form-control input-lg" placeholder="Correo Electronico" type="text">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="right-inner-addon">
+                <i class="fa fa-key"></i>
+                <input class="form-control input-lg" placeholder="Contraseña" type="password">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="right-inner-addon">
+                <i class="fa fa-key"></i>
+                <input class="form-control input-lg" placeholder="Confirmar Contraseña" id="" type="password">
+              </div>
+            </div>
+          </fieldset>
+         <div class=" text-center">
+            <button class="btn btn-primary">Crear Cuenta</button>
+          </div>
+          <hr>
+        </div>
+        <div class="tab-pane fade" id="user">
+          <br>
+          <fieldset>
+            <div class="form-group">
+              <div class="right-inner-addon">
+                <i class="fa fa-envelope"></i>
+                <input class="form-control input-lg" placeholder="Correo Electronico" type="text">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="right-inner-addon">
+                <i class="fa fa-key"></i>
+                <input class="form-control input-lg" placeholder="Contraseña" type="password">
+              </div>
+            </div>
+          </fieldset>
+          <div class=" text-center">
+            <button class="btn btn-primary">LOGIN</button>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
     
     </form>
   </body>
