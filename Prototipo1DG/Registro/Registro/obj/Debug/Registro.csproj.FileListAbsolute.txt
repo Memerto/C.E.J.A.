@@ -1,0 +1,9 @@
+E:\C#\C.E.J.A\Registro\Registro\bin\Registro.dll
+E:\C#\C.E.J.A\Registro\Registro\bin\Registro.pdb
+E:\C#\C.E.J.A\Registro\Registro\obj\Debug\Registro.dll
+E:\C#\C.E.J.A\Registro\Registro\obj\Debug\Registro.pdb
+I:\C#\C.E.J.A\Registro\Registro\bin\Registro.dll
+I:\C#\C.E.J.A\Registro\Registro\bin\Registro.pdb
+I:\C#\C.E.J.A\Registro\Registro\obj\Debug\Registro.csprojResolveAssemblyReference.cache
+I:\C#\C.E.J.A\Registro\Registro\obj\Debug\Registro.dll
+I:\C#\C.E.J.A\Registro\Registro\obj\Debug\Registro.pdb
