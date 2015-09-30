@@ -3,13 +3,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>C.E.J.A. | Administrador</title>
     <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
     <!-- Bootstrap 3.3.5 -->
-    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css"/>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Ionicons -->
@@ -43,10 +43,10 @@
         <!-- Logo -->
         <a href="../../index2.html" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <img src="../../dist/img/Logo%20transparente.png" width="45px" ImageAlign="Left"/><b> C . E . J . A .</b>
+          <img src="../../dist/img/Logo%20transparente.png" width="45px" imagealign="Left"/><b> C . E . J . A .</b>
           <span class="logo-mini"><b>CE</b>JA</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-mini" src="../../dist/img/Logo%20transparente.png" width="40px" ImageAlign="Left"/></span>
+          <span class="logo-mini" src="../../dist/img/Logo%20transparente.png" width="40px" imagealign="Left"/></span>
 
         </a>
         <!-- Header Navbar: style can be found in header.less -->
@@ -237,17 +237,35 @@
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
      <div class="modal-dialog" role="document">
         <div class="modal-content">
+
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="false">&times;</span></button>
+        <div class="text-center">
+        <!--botones de registro y logeo-->
+        <a href="#new" role="tab" data-toggle="tab" class="big btn btn-primary"><i class="fa fa-plus"></i> Nuevo Usuario</a>
+
+        <a href="#user" role="tab" data-toggle="tab" class="big btn btn-danger"><i class="fa fa-user"></i> Ya tengo una cuenta</a>
+        <!--botones de registro y logeo-->
+      </div>
+      </div>
+
         <div class="container sign-in-up">
   <div class="row">
     <div class="col-md-4 col-md-offset-1">
-      <br>
+      
       <!-- Nav tabs -->
+
+      <!--
       <div class="text-center">
+      
         <div class="btn-group">
           <a href="#new" role="tab" data-toggle="tab" class="big btn btn-primary"><i class="fa fa-plus"></i> Nuevo Usuario</a>
           <a href="#user" role="tab" data-toggle="tab" class="big btn btn-danger"><i class="fa fa-user"></i> Ya tengo una cuenta</a>
+          
         </div>
+        
       </div>
+      -->
       <div class="tab-content">
         <div class="tab-pane fade in active" id="new">
           <br>
@@ -284,11 +302,14 @@
                     <asp:RequiredFieldValidator runat="server" ID="pideApodo" ControlToValidate="apodo" ErrorMessage="Ingrese un apodo" />
                 </div>
             </div>
+            <!--
             <div class="form-group">
+            -->
                 <div class="right-inner-addon">
-                    <div class="col-xs-6">
+                      
             <h2 class="text-center">Elija una o mas intereses</h2>
-            <div class="well" style="max-height: 300px;overflow: auto; width: 300px;">
+            <br />
+            <div class="well" style="max-height: auto;overflow: auto; width: ;">
             	<ul id="check-list-box" class="list-group checked-list-box">
                   <li class="list-group-item" data-color="info">Arduino</li>
                   <li class="list-group-item" data-color="info">ASP.NET</li>
@@ -302,9 +323,11 @@
                   <li class="list-group-item" data-color="danger">Electronica</li>
                 </ul>
             </div>
-        </div>
+        <!--
+         
           </div>
             </div>
+            -->
           </fieldset>
          <div class=" text-center">
             <button class="btn btn-primary" id="crear-cuenta">Crear Cuenta</button>

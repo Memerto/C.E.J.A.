@@ -43,7 +43,7 @@
         <!-- Logo -->
         <a href="../../index2.html" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <img src="http://localhost:27787/dist/img/Logo%20transparente.png" width="45px" ImageAlign="Left"/><b> C . E . J . A</b>
+          <img src="../../dist/img/Logo%20transparente.png" width="45px" ImageAlign="Left"/><b> C . E . J . A</b>
           <span class="logo-mini"><b>CE</b>JA</span>
           <!-- logo for regular state and mobile devices -->
           <span class="logo-mini" src="http://localhost:27787/dist/img/Logo%20transparente.png" width="45px" ImageAlign="Left"/></span>
