@@ -46,7 +46,7 @@
           <img src="../../dist/img/Logo%20transparente.png" width="45px" ImageAlign="Left"/><b> C . E . J . A .</b>
           <span class="logo-mini"><b>CE</b>JA</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-mini" src="../../dist/img/Logo%20transparente.png" width="45px" ImageAlign="Left"/></span>
+          <span class="logo-mini" src="../../dist/img/Logo%20transparente.png" width="40px" ImageAlign="Left"/></span>
 
         </a>
         <!-- Header Navbar: style can be found in header.less -->
@@ -60,72 +60,16 @@
           </a>
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-              <!-- Messages: style can be found in dropdown.less-->
-              <li class="dropdown messages-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-envelope-o"></i>
-                  <span class="label label-success">1</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="header">Hay 1 mensaje en el inbox</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li><!-- start message -->
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="../../dist/img/cart alfa 1 invertido claro.png" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Super MarkIt
-                            <small><i class="fa fa-clock-o"></i> 25 mins</small>
-                          </h4>
-                          <p>Ha comentado en tu aporte</p>
-                        </a>
-                      </li><!-- end message -->
-                    </ul>
-                  </li>
-                  <li class="footer"><a href="#">Ver otros mensajes</a></li>
-                </ul>
-              </li>
-              <!-- Notifications: style can be found in dropdown.less -->
-              <li class="dropdown notifications-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-bell-o"></i>
-                  <span class="label label-warning">5</span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li class="header">Hay 5 notificaciones sin leer</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-arrow-up text-aqua"></i>3 Aprovaciones pendientes
-                            
-                        </a>
-                        <a href="#">
-                          <i class="fa fa-arrow-down text-aqua"></i>2 Desaprovaciones pendientes
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                  <li class="footer"><a href="#">Ver Todo</a></li>
-                </ul>
-              </li>
-              <!-- Tasks: style can be found in dropdown.less -->
-              
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="../../dist/img/avatar.png" class="user-image" alt="User Image">
+                  <img src="../../dist/img/jerry.jpg" class="user-image" alt="User Image">
                   <span class="hidden-xs">Juanito</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="../../dist/img/avatar.png" class="img-circle" alt="User Image">
+                    <img src="../../dist/img/jerry.jpg" class="img-circle" alt="User Image">
                     <p>
                       Juanito
                       <br />
@@ -140,7 +84,7 @@
                       <a href="../../CuentaUsuarioAdministrador.aspx" class="btn btn-default btn-flat">Editar Perfil</a>
                     </div>
                     <div class="pull-right">
-                      <a href="#" class="btn btn-default btn-flat">Cerrar Sesion</a>
+                      <a href="#" class="btn btn-default btn-flat" data-toggle="modal" data-target="#loginModal">Login/Registrarse</a>
                     </div>
                   </li>
                 </ul>
@@ -163,28 +107,9 @@
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
           <!-- Sidebar user panel -->
-          <div class="user-panel">
-            <div class="pull-left image">
-              <img src="../../dist/img/avatar.png" class="img-circle" alt="User Image">
-            </div>
-            <div class="pull-left info">
-              <p>Juanito</p>
-              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-            </div>
-          </div>
-          <!-- search form -->
-          <form action="#" method="get" class="sidebar-form">
-            <div class="input-group">
-              <input type="text" name="q" class="form-control" placeholder="Buscar">
-              <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
-              </span>
-            </div>
-          </form>
-          <!-- /.search form -->
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
-            <li class="header">NAVEGACION</li>
+            <li class="header text-center">NAVEGACION</li>
             <li class="#">
               <a href="#">
                 <i class="fa fa-home"></i> <span>Inicio</span>
@@ -226,7 +151,6 @@
                   <li><a href="../../Hijo2.aspx"><i class="fa fa-circle-o"></i> Desarrollo Web</a></li>
                   <li><a href="#"><i class="fa fa-circle-o"></i> Hardware</a></li>
                   <li><a href="#"><i class="fa fa-circle-o"></i> Cocina</a></li>
-                  <li><a href="#" data-toggle="modal" data-target="#loginModal">content</a></li>
                   </ul>
               </li>
               </ul>
@@ -291,173 +215,6 @@
         </div>
         <strong>Copyright &copy; 2015-20?? <a>Alumnos DUOC</a>.</strong> Todos los derechos reservados.
       </footer>
-
-      <!-- Control Sidebar -->
-      <aside class="control-sidebar control-sidebar-dark">
-        <!-- Create the tabs -->
-        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-          <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-
-          <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
-        </ul>
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <!-- Home tab content -->
-          <div class="tab-pane" id="control-sidebar-home-tab">
-            <h3 class="control-sidebar-heading">Actividad Reciente</h3>
-            <ul class="control-sidebar-menu">
-              <li>
-                <a href="javascript::;">
-                  <i class="menu-icon fa fa-birthday-cake bg-red"></i>
-                  <div class="menu-info">
-                    <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
-                    <p>Will be 23 on April 24th</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="javascript::;">
-                  <i class="menu-icon fa fa-user bg-yellow"></i>
-                  <div class="menu-info">
-                    <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
-                    <p>New phone +1(800)555-1234</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="javascript::;">
-                  <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
-                  <div class="menu-info">
-                    <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
-                    <p>nora@example.com</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="javascript::;">
-                  <i class="menu-icon fa fa-file-code-o bg-green"></i>
-                  <div class="menu-info">
-                    <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
-                    <p>Execution time 5 seconds</p>
-                  </div>
-                </a>
-              </li>
-            </ul><!-- /.control-sidebar-menu -->
-
-            <h3 class="control-sidebar-heading">Tasks Progress</h3>
-            <ul class="control-sidebar-menu">
-              <li>
-                <a href="javascript::;">
-                  <h4 class="control-sidebar-subheading">
-                    Custom Template Design
-                    <span class="label label-danger pull-right">70%</span>
-                  </h4>
-                  <div class="progress progress-xxs">
-                    <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="javascript::;">
-                  <h4 class="control-sidebar-subheading">
-                    Update Resume
-                    <span class="label label-success pull-right">95%</span>
-                  </h4>
-                  <div class="progress progress-xxs">
-                    <div class="progress-bar progress-bar-success" style="width: 95%"></div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="javascript::;">
-                  <h4 class="control-sidebar-subheading">
-                    Laravel Integration
-                    <span class="label label-warning pull-right">50%</span>
-                  </h4>
-                  <div class="progress progress-xxs">
-                    <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="javascript::;">
-                  <h4 class="control-sidebar-subheading">
-                    Back End Framework
-                    <span class="label label-primary pull-right">68%</span>
-                  </h4>
-                  <div class="progress progress-xxs">
-                    <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
-                  </div>
-                </a>
-              </li>
-            </ul><!-- /.control-sidebar-menu -->
-
-          </div><!-- /.tab-pane -->
-          <!-- Stats tab content -->
-          <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div><!-- /.tab-pane -->
-          <!-- Settings tab content -->
-          <div class="tab-pane" id="control-sidebar-settings-tab">
-            <form method="post">
-              <h3 class="control-sidebar-heading">General Settings</h3>
-              <div class="form-group">
-                <label class="control-sidebar-subheading">
-                  Report panel usage
-                  <input type="checkbox" class="pull-right" checked>
-                </label>
-                <p>
-                  Some information about this general settings option
-                </p>
-              </div><!-- /.form-group -->
-
-              <div class="form-group">
-                <label class="control-sidebar-subheading">
-                  Allow mail redirect
-                  <input type="checkbox" class="pull-right" checked>
-                </label>
-                <p>
-                  Other sets of options are available
-                </p>
-              </div><!-- /.form-group -->
-
-              <div class="form-group">
-                <label class="control-sidebar-subheading">
-                  Expose author name in posts
-                  <input type="checkbox" class="pull-right" checked>
-                </label>
-                <p>
-                  Allow the user to show his name in blog posts
-                </p>
-              </div><!-- /.form-group -->
-
-              <h3 class="control-sidebar-heading">Chat Settings</h3>
-
-              <div class="form-group">
-                <label class="control-sidebar-subheading">
-                  Show me as online
-                  <input type="checkbox" class="pull-right" checked>
-                </label>
-              </div><!-- /.form-group -->
-
-              <div class="form-group">
-                <label class="control-sidebar-subheading">
-                  Turn off notifications
-                  <input type="checkbox" class="pull-right">
-                </label>
-              </div><!-- /.form-group -->
-
-              <div class="form-group">
-                <label class="control-sidebar-subheading">
-                  Delete chat history
-                  <a href="javascript::;" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
-                </label>
-              </div><!-- /.form-group -->
-            </form>
-          </div><!-- /.tab-pane -->
-        </div>
-      </aside><!-- /.control-sidebar -->
-      <!-- Add the sidebar's background. This div must be placed
-           immediately after the control sidebar -->
-      <div class="control-sidebar-bg"></div>
     </div><!-- ./wrapper -->
 
     <!-- jQuery 2.1.4 -->
@@ -472,7 +229,11 @@
     <script src="../../dist/js/app.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="../../dist/js/demo.js"></script>
+   
     <!-- Modal -->
+    <link href="Login.css" rel="stylesheet" type="text/css" />
+    <link href="Modal-List.css" rel="stylesheet" type="text/css" />
+    <script src="Modal-Lista.js" type="text/javascript"></script>
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
      <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -494,24 +255,59 @@
             <div class="form-group">
               <div class="right-inner-addon">
                 <i class="fa fa-envelope"></i>
-                <input class="form-control input-lg" placeholder="Correo Electronico" type="text">
+                <asp:TextBox class="form-control input-lg" runat="server" ID="txtCorreo" placeholder="Correo Electronico"/>
+                <asp:RequiredFieldValidator runat="server" id="pideCorreo" ControlToValidate="txtCorreo" 
+                ValidationGroup="crearUsuarioValidar" ErrorMessage="Ingrese su correo!" />
+                <asp:RegularExpressionValidator runat="server" ID="revisaCorreo" ErrorMessage="No es un email Valido" 
+                ControlToValidate="txtCorreo" ValidationGroup="crearUsuarioValidar" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">
+                </asp:RegularExpressionValidator>
               </div>
             </div>
             <div class="form-group">
               <div class="right-inner-addon">
                 <i class="fa fa-key"></i>
-                <input class="form-control input-lg" placeholder="Contraseña" type="password">
+                <asp:TextBox class="form-control input-lg" runat="server" ID="contraseña" type="password" placeholder="Contraseña" />
+                <asp:RequiredFieldValidator runat="server" ID="pidecontraseña" ControlToValidate="contraseña" ErrorMessage="Ingrese una contraseña" />
               </div>
             </div>
             <div class="form-group">
               <div class="right-inner-addon">
                 <i class="fa fa-key"></i>
-                <input class="form-control input-lg" placeholder="Confirmar Contraseña" id="" type="password">
+                <asp:TextBox class="form-control input-lg" runat="server" ID="confirmarContraseña" type="password" placeholder="Repita Contraseña" />
+                <asp:CompareValidator runat="server" ID="comparaContraseñas" ControlToValidate="contraseña" ControlToCompare="confirmarContraseña" Operator="Equal" type="String" ErrorMessage="Las contraseñas no coinciden" />
               </div>
+            </div>
+            <div class="form-group">
+                <div class="right-inner-addon">
+                    <i class="fa fa-pencil"></i>
+                    <asp:TextBox class="form-control input-lg" runat="server" ID="apodo" placeholder="Apodo" />
+                    <asp:RequiredFieldValidator runat="server" ID="pideApodo" ControlToValidate="apodo" ErrorMessage="Ingrese un apodo" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="right-inner-addon">
+                    <div class="col-xs-6">
+            <h2 class="text-center">Elija una o mas intereses</h2>
+            <div class="well" style="max-height: 300px;overflow: auto; width: 300px;">
+            	<ul id="check-list-box" class="list-group checked-list-box">
+                  <li class="list-group-item" data-color="info">Arduino</li>
+                  <li class="list-group-item" data-color="info">ASP.NET</li>
+                  <li class="list-group-item" data-color="info">C#</li>
+                  <li class="list-group-item" data-color="info">Javascript</li>
+                  <li class="list-group-item" data-color="info">Software</li>
+                  <li class="list-group-item" data-color="info">Desarrollo Web</li>
+                  <li class="list-group-item" data-color="info">Software</li>
+                  <li class="list-group-item" data-color="warning">Reposteria</li>
+                  <li class="list-group-item" data-color="warning">Comida Chilena</li>
+                  <li class="list-group-item" data-color="danger">Electronica</li>
+                </ul>
+            </div>
+        </div>
+          </div>
             </div>
           </fieldset>
          <div class=" text-center">
-            <button class="btn btn-primary">Crear Cuenta</button>
+            <button class="btn btn-primary" id="crear-cuenta">Crear Cuenta</button>
           </div>
           <hr>
         </div>
@@ -521,7 +317,8 @@
             <div class="form-group">
               <div class="right-inner-addon">
                 <i class="fa fa-envelope"></i>
-                <input class="form-control input-lg" placeholder="Correo Electronico" type="text">
+                <asp:TextBox class="form-control input-lg" runat="server" ID="correoLogin" text="Correo Electronico"/>
+                <asp:RequiredFieldValidator runat="server" id="pideCorreoLogin" ControlToValidate="correoLogin" ErrorMessage="Ingrese su correo!" />
               </div>
             </div>
             <div class="form-group">

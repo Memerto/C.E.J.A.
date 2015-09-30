@@ -1,15 +1,19 @@
-﻿s<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="Prototipo1DG.Inicio" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="Prototipo1DG.Inicio" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 <title>Inicio Foro</title>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <link href="Nose.css" rel="stylesheet" type="text/css" />
+    
+    
     <div class="container" >
   <div class="page-header page-heading">
     <h1 class="pull-left">Foros</h1>
     <div class="clearfix"></div>
   </div>
   <p class="lead">Unete a la discucion!.</p>
+
   <table class="table forum table-striped">
     <thead>
       <tr>
@@ -127,6 +131,7 @@
       </tr>
     </tbody>
   </table>
+
 </div>
 </div>
 

@@ -130,12 +130,12 @@
     <Content Include="dist\js\pages\dashboard.js" />
     <Content Include="dist\js\pages\dashboard2.js" />
     <Content Include="Gruntfile.js" />
-    <Content Include="Hijo1.aspx" />
-    <Content Include="Hijo2.aspx" />
     <Content Include="HijoAD1.aspx" />
-    <Content Include="index.html" />
-    <Content Include="index2.html" />
     <Content Include="Inicio.aspx" />
+    <Content Include="Login.css" />
+    <Content Include="Modal-List.css" />
+    <Content Include="Modal-Lista.js" />
+    <Content Include="Nose.css" />
     <Content Include="pages\calendar.html" />
     <Content Include="pages\charts\chartjs.html" />
     <Content Include="pages\charts\flot.html" />
@@ -910,20 +910,6 @@
     <Compile Include="CuentaUsuarioAdministrador.aspx.designer.cs">
       <DependentUpon>CuentaUsuarioAdministrador.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Hijo1.aspx.cs">
-      <DependentUpon>Hijo1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Hijo1.aspx.designer.cs">
-      <DependentUpon>Hijo1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Hijo2.aspx.cs">
-      <DependentUpon>Hijo2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Hijo2.aspx.designer.cs">
-      <DependentUpon>Hijo2.aspx</DependentUpon>
-    </Compile>
     <Compile Include="HijoAD1.aspx.cs">
       <DependentUpon>HijoAD1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -962,7 +948,6 @@
     <None Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <None Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <None Include="bootstrap\fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="bower.json" />
     <None Include="build\bootstrap-less\mixins.less" />
     <None Include="build\bootstrap-less\mixins\alerts.less" />
     <None Include="build\bootstrap-less\mixins\background-variant.less" />
@@ -1047,7 +1032,6 @@
     <None Include="build\less\users-list.less" />
     <None Include="build\less\variables.less" />
     <None Include="changelog" />
-    <None Include="composer.json" />
     <Content Include="Home.Master" />
     <Content Include="MasterAdministrador.Master" />
     <None Include="package.json" />
@@ -1086,7 +1070,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>40104</DevelopmentServerPort>
+          <DevelopmentServerPort>50521</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
