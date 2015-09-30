@@ -886,32 +886,6 @@
     <Content Include="plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="plugins\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="plugins\timepicker\bootstrap-timepicker.min.js" />
-    <Content Include="Registro\Backup\Registro.sln" />
-    <Content Include="Registro\Backup\Registro\EstiloRegistro.css" />
-    <Content Include="Registro\Backup\Registro\Registro.aspx" />
-    <Content Include="Registro\Backup\Registro\Registro.csproj" />
-    <Content Include="Registro\Backup\Registro\Registro.csproj.user" />
-    <Content Include="Registro\Registro.sln" />
-    <Content Include="Registro\Registro\bin\Registro.dll" />
-    <Content Include="Registro\Registro\bin\Registro.pdb" />
-    <Content Include="Registro\Registro\css\bootstrap-theme.css" />
-    <Content Include="Registro\Registro\css\bootstrap-theme.min.css" />
-    <Content Include="Registro\Registro\css\bootstrap.css" />
-    <Content Include="Registro\Registro\css\bootstrap.min.css" />
-    <Content Include="Registro\Registro\obj\Debug\Registro.csproj.FileListAbsolute.txt" />
-    <Content Include="Registro\Registro\obj\Debug\Registro.dll" />
-    <Content Include="Registro\Registro\obj\Debug\Registro.pdb" />
-    <Content Include="Registro\Registro\Registro.aspx" />
-    <Content Include="Registro\Registro\Registro.csproj" />
-    <Content Include="Registro\Registro\Registro.csproj.user" />
-    <Content Include="Registro\UpgradeLog.htm" />
-    <Content Include="Registro\UpgradeLog.XML" />
-    <Content Include="Registro\_UpgradeReport_Files\UpgradeReport.css" />
-    <Content Include="Registro\_UpgradeReport_Files\UpgradeReport.xslt" />
-    <Content Include="Registro\_UpgradeReport_Files\UpgradeReport_Error.png" />
-    <Content Include="Registro\_UpgradeReport_Files\UpgradeReport_Information.png" />
-    <Content Include="Registro\_UpgradeReport_Files\UpgradeReport_Success.png" />
-    <Content Include="Registro\_UpgradeReport_Files\UpgradeReport_Warning.png" />
     <Content Include="starter.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -979,22 +953,6 @@
       <DependentUpon>MasterAdministrador.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registro\Backup\Registro\Properties\AssemblyInfo.cs" />
-    <Compile Include="Registro\Backup\Registro\Registro.aspx.cs">
-      <DependentUpon>Registro.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Registro\Backup\Registro\Registro.aspx.designer.cs">
-      <DependentUpon>Registro.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Registro\Registro\Properties\AssemblyInfo.cs" />
-    <Compile Include="Registro\Registro\Registro.aspx.cs">
-      <DependentUpon>Registro.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Registro\Registro\Registro.aspx.designer.cs">
-      <DependentUpon>Registro.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
@@ -1114,35 +1072,6 @@
     <None Include="plugins\datatables\extensions\TableTools\Readme.md" />
     <None Include="plugins\input-mask\phone-codes\phone-be.json" />
     <None Include="plugins\input-mask\phone-codes\phone-codes.json" />
-    <None Include="Registro\Backup\Registro.v11.suo" />
-    <Content Include="Registro\Backup\Registro\Web.config" />
-    <Content Include="Registro\Backup\Registro\Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Registro\Backup\Registro\Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <None Include="Registro\Registro.suo" />
-    <None Include="Registro\Registro.v11.suo" />
-    <None Include="Registro\Registro\css\bootstrap-theme.css.map" />
-    <None Include="Registro\Registro\css\bootstrap.css.map" />
-    <None Include="Registro\Registro\fonts\glyphicons-halflings-regular.eot" />
-    <None Include="Registro\Registro\fonts\glyphicons-halflings-regular.svg" />
-    <None Include="Registro\Registro\fonts\glyphicons-halflings-regular.ttf" />
-    <None Include="Registro\Registro\fonts\glyphicons-halflings-regular.woff" />
-    <None Include="Registro\Registro\fonts\glyphicons-halflings-regular.woff2" />
-    <None Include="Registro\Registro\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="Registro\Registro\obj\Debug\Registro.csprojResolveAssemblyReference.cache" />
-    <Content Include="Registro\Registro\Web.config" />
-    <Content Include="Registro\Registro\Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-    <Content Include="Registro\Registro\Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Registro\Registro\obj\Debug\TempPE\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
