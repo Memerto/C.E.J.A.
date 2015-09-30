@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="Prototipo1DG.Inicio" %>
+﻿s<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="Inicio.aspx.cs" Inherits="Prototipo1DG.Inicio" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 <title>Inicio Foro</title>
 </asp:Content>
@@ -9,7 +9,7 @@
     <h1 class="pull-left">Foros</h1>
     <div class="clearfix"></div>
   </div>
-  <p class="lead">Unete a la discusión!.</p>
+  <p class="lead">Unete a la discucion!.</p>
   <table class="table forum table-striped">
     <thead>
       <tr>
