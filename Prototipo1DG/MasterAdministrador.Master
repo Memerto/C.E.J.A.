@@ -41,9 +41,9 @@
 
       <header class="main-header">
         <!-- Logo -->
-        <a href="../../index2.html" class="logo">
+        <a href="../../Inicio.aspx" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <img src="../../dist/img/Logo%20transparente.png" width="45px" imagealign="Left"/><b> C . E . J . A .</b>
+          <img src="../../dist/img/Logo%20transparente.png" width="45px" ImageAlign="Left"/><b> C . E . J . A .</b>
           <span class="logo-mini"><b>CE</b>JA</span>
           <!-- logo for regular state and mobile devices -->
           <span class="logo-mini" src="../../dist/img/Logo%20transparente.png" width="40px" imagealign="Left"/></span>
@@ -89,12 +89,6 @@
                   </li>
                 </ul>
               </li>
-              <!-- Control Sidebar Toggle Button -->
-              <!--
-              <li>
-                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-              </li>
-              -->
             </ul>
           </div>
         </nav>
@@ -143,9 +137,9 @@
                   <li><a href="../../Hijo1.aspx"><i class="fa fa-circle-o"></i> Softwares</a></li>
                   <li><a href="../../Hijo1.aspx"><i class="fa fa-circle-o"></i> Programacion <i class="fa fa-angle-left pull-right"></i></a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> .NET</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Java</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Arduino</a></li>
+                        <li><a href="../../Tema.aspx"><i class="fa fa-circle-o"></i> .NET</a></li>
+                        <li><a href="../../Tema.aspx"><i class="fa fa-circle-o"></i> Java</a></li>
+                        <li><a href="../../Tema.aspx"><i class="fa fa-circle-o"></i> Arduino</a></li>
                     </ul>
                     </li>
                   <li><a href="../../Hijo2.aspx"><i class="fa fa-circle-o"></i> Desarrollo Web</a></li>
@@ -155,6 +149,7 @@
               </li>
               </ul>
             </li>
+            
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-check"></i>
@@ -176,7 +171,12 @@
               </asp:ContentPlaceHolder>
             </li>
             <asp:ContentPlaceHolder ID="Administrador" runat="server">
-            </asp:ContentPlaceHolder>         
+            </asp:ContentPlaceHolder> 
+              <li class="#">
+              <a href="../../Paginas.aspx">
+                <i class="fa fa-book"></i>
+                <span>Ver Libro</span><i class="fa fa-angle-left pull-right"></i>
+          </li>      
           </ul>
         </section>
         <!-- /.sidebar -->

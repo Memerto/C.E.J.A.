@@ -67,6 +67,9 @@
     <Content Include="CuentaUsuarioAdministrador.aspx" />
     <Content Include="dist\css\AdminLTE.css" />
     <Content Include="dist\css\AdminLTE.min.css" />
+    <Content Include="dist\css\bookblock.css" />
+    <Content Include="dist\css\custom.css" />
+    <Content Include="dist\css\jquery.jscrollpane.custom.css" />
     <Content Include="dist\css\skins\skin-black-light.css" />
     <Content Include="dist\css\skins\skin-black-light.min.css" />
     <Content Include="dist\css\skins\skin-black.css" />
@@ -111,6 +114,7 @@
     <Content Include="dist\img\credit\visa.png" />
     <Content Include="dist\img\default-50x50.gif" />
     <Content Include="dist\img\icons.png" />
+    <Content Include="dist\img\jerry.jpg" />
     <Content Include="dist\img\Logo transparente.png" />
     <Content Include="dist\img\photo1.png" />
     <Content Include="dist\img\photo2.png" />
@@ -127,6 +131,12 @@
     <Content Include="dist\js\app.js" />
     <Content Include="dist\js\app.min.js" />
     <Content Include="dist\js\demo.js" />
+    <Content Include="dist\js\jquery.bookblock.js" />
+    <Content Include="dist\js\jquery.jscrollpane.min.js" />
+    <Content Include="dist\js\jquery.mousewheel.js" />
+    <Content Include="dist\js\jquerypp.custom.js" />
+    <Content Include="dist\js\modernizr.custom.79639.js" />
+    <Content Include="dist\js\page.js" />
     <Content Include="dist\js\pages\dashboard.js" />
     <Content Include="dist\js\pages\dashboard2.js" />
     <Content Include="Gruntfile.js" />
@@ -136,39 +146,7 @@
     <Content Include="Modal-List.css" />
     <Content Include="Modal-Lista.js" />
     <Content Include="Nose.css" />
-    <Content Include="pages\calendar.html" />
-    <Content Include="pages\charts\chartjs.html" />
-    <Content Include="pages\charts\flot.html" />
-    <Content Include="pages\charts\inline.html" />
-    <Content Include="pages\charts\morris.html" />
-    <Content Include="pages\examples\404.html" />
-    <Content Include="pages\examples\500.html" />
-    <Content Include="pages\examples\blank.html" />
-    <Content Include="pages\examples\invoice-print.html" />
-    <Content Include="pages\examples\invoice.html" />
-    <Content Include="pages\examples\lockscreen.html" />
-    <Content Include="pages\examples\login.html" />
-    <Content Include="pages\examples\profile.html" />
-    <Content Include="pages\examples\register.html" />
-    <Content Include="pages\forms\advanced.html" />
-    <Content Include="pages\forms\editors.html" />
-    <Content Include="pages\forms\general.html" />
-    <Content Include="pages\layout\boxed.html" />
-    <Content Include="pages\layout\collapsed-sidebar.html" />
-    <Content Include="pages\layout\fixed.html" />
-    <Content Include="pages\layout\top-nav.html" />
-    <Content Include="pages\mailbox\compose.html" />
-    <Content Include="pages\mailbox\mailbox.html" />
-    <Content Include="pages\mailbox\read-mail.html" />
-    <Content Include="pages\tables\data.html" />
-    <Content Include="pages\tables\simple.html" />
-    <Content Include="pages\UI\buttons.html" />
-    <Content Include="pages\UI\general.html" />
-    <Content Include="pages\UI\icons.html" />
-    <Content Include="pages\UI\modals.html" />
-    <Content Include="pages\UI\sliders.html" />
-    <Content Include="pages\UI\timeline.html" />
-    <Content Include="pages\widgets.html" />
+    <Content Include="Paginas.aspx" />
     <Content Include="plugins\bootstrap-slider\bootstrap-slider.js" />
     <Content Include="plugins\bootstrap-slider\slider.css" />
     <Content Include="plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.all.js" />
@@ -886,7 +864,7 @@
     <Content Include="plugins\timepicker\bootstrap-timepicker.js" />
     <Content Include="plugins\timepicker\bootstrap-timepicker.min.css" />
     <Content Include="plugins\timepicker\bootstrap-timepicker.min.js" />
-    <Content Include="starter.html" />
+    <Content Include="Tema.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -938,7 +916,28 @@
     <Compile Include="MasterAdministrador.Master.designer.cs">
       <DependentUpon>MasterAdministrador.Master</DependentUpon>
     </Compile>
+    <Compile Include="MasterLibro.Master.cs">
+      <DependentUpon>MasterLibro.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterLibro.Master.designer.cs">
+      <DependentUpon>MasterLibro.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas.aspx.cs">
+      <DependentUpon>Paginas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas.aspx.designer.cs">
+      <DependentUpon>Paginas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tema.aspx.cs">
+      <DependentUpon>Tema.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tema.aspx.designer.cs">
+      <DependentUpon>Tema.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
@@ -1034,6 +1033,7 @@
     <None Include="changelog" />
     <Content Include="Home.Master" />
     <Content Include="MasterAdministrador.Master" />
+    <Content Include="MasterLibro.Master" />
     <None Include="package.json" />
     <None Include="plugins\ckeditor\CHANGES.md" />
     <None Include="plugins\ckeditor\LICENSE.md" />
