@@ -142,6 +142,7 @@
     <Content Include="Gruntfile.js" />
     <Content Include="HijoAD1.aspx" />
     <Content Include="Inicio.aspx" />
+    <Content Include="Libro.aspx" />
     <Content Include="Login.css" />
     <Content Include="Modal-List.css" />
     <Content Include="Modal-Lista.js" />
@@ -908,6 +909,13 @@
     </Compile>
     <Compile Include="Inicio.aspx.designer.cs">
       <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Libro.aspx.cs">
+      <DependentUpon>Libro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Libro.aspx.designer.cs">
+      <DependentUpon>Libro.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterAdministrador.Master.cs">
       <DependentUpon>MasterAdministrador.Master</DependentUpon>
