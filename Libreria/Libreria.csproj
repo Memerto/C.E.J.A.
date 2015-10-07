@@ -53,6 +53,7 @@
     <Compile Include="Seccion.cs" />
     <Compile Include="Tema.cs" />
     <Compile Include="TipoPropuesta.cs" />
+    <Compile Include="TipoReporte.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="Visitante.cs" />
   </ItemGroup>
