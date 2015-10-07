@@ -13,7 +13,7 @@ namespace Libreria
         private int _cantidadAprobacion;
         private int _cantidadDesaprobacion;
         private Tema _tema;
-        private ArrayList _idPropuestas;
+        private ArrayList _idPropuestas; //nose todavia
 
         #region Getters y Setters
 
@@ -83,7 +83,7 @@ namespace Libreria
             }
         }
 
-        public Boolean actualizarPagina(String informacion,String titulo) {
+        public Boolean actualizarPagina(String informacion,String titulo,TipoPropuesta tipo) {
 
             Tema tema = getTema();
             
@@ -96,7 +96,7 @@ namespace Libreria
                 setTitulo(titulo);
 	        }
 
-            actualizarCantidadesAprobDesaprob();
+            actualizarCantidadesAprobDesaprob(tipo);
 
 
             return true;

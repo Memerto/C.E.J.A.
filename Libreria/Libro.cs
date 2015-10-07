@@ -19,7 +19,27 @@ namespace Libreria
 
         #endregion
 
-        public void buscar() { }
+        public void buscar(String palabra) {
+
+            ArrayList paginas = getPaginas();
+            Pagina pagina;
+            Tema tema;
+            Post post;
+            Propuesta propuesta;
+
+            for (int i = 0; i < paginas.Count; i++)
+            {
+                pagina = (Pagina)paginas[i];
+                tema = pagina.getTema();
+                for (int i = 0; i < length; i++)
+                {
+                    
+                }
+            }
+
+
+
+        }
 
         public void mostrarPagina() { }
 

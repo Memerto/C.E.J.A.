@@ -207,6 +207,60 @@
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
+         <!--Inicio del modal Post-->
+            <!--Puse un Modal de Post para que el usario pueda postear desde
+                cualquier parte, para que así no tenga que ir al Tema directamente
+                y perder tiempo, que sea cómodo. Obviamente si quiere revisar de manera
+                más detalladan debe ir al Tema directamente.-->
+             
+            <div class="modal fade" id="modalPostear" tabindex="-1" role="dialog" aria-labelledby="modalPostear">
+            <div class="modal-dialog" role="document">
+                
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        
+                       
+                        
+                        <div class="form-group">
+                            <label for="select" class="col-lg-2 control-label" style="width: 150px">Tema a seleccionar</label>
+                            <div class="col-lg-10" style="width: 150px">
+                                <select class="form-control" id="select">
+                                    <option><a href="#"></a></option>
+                                    <option><a href="#">ASP.NET</a></option>
+                                    <option><a href="#">Java</a></option>
+                                    <option><a href="#">Swift</a></option>
+                                    <option><a href="#">Android</a></option>
+                                    <option><a href="#">Ajax</a></option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+                        
+
+                    </div>
+                    
+                    <div class="modal-body">
+                        <textarea id="txaModal" cols="91" rows="5" placeholder="Qué deseas postear?"></textarea>
+
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Enviar</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+            
+       
+         <!--Fin del modal Post-->
 
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
