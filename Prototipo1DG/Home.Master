@@ -174,7 +174,7 @@
                 <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
               </ul>
             </li>
-            <li class="#">
+            <li class="treeview">
               <a href="../../Paginas.aspx">
                 <i class="fa fa-book"></i>
                 <span>Ver Libro</span><i class="fa fa-angle-left pull-right"></i>

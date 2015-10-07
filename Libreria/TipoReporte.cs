@@ -5,59 +5,52 @@ using System.Text;
 
 namespace Libreria
 {
-    class Categoria
+    class TipoReporte
     {
         private int _id;
         private String _tipo;
 
-        #region Getters y Setters
-
         public void setID(int id) { _id = id; }
         public void setTipo(String tipo) { _tipo = tipo; }
-
         public int getID() { return _id; }
         public String getTipo() { return _tipo; }
 
-        #endregion
-
-        public Categoria() {
+        public TipoReporte() {
 
             setID(0);
             setTipo("");
         }
 
-        public Categoria(int id,String tipo) {
+        public TipoReporte(int id, String tipo) {
 
             if (id == 0)
             {
-                throw new ArgumentNullException("Constructor Categoria - ID invalido.");
+                throw new ArgumentNullException("ID del reporte no valida (0 o null)");
             }
             else
             {
-                if (tipo == "" || tipo == null)
+                if (tipo == null || tipo == "")
                 {
-                    throw new ArgumentNullException("Constructor Categoria - Tipo invalido.");
+                    throw new ArgumentNullException("Texto del reporte invalido (\"\" o null)");
                 }
                 else
                 {
                     setID(id);
                     setTipo(tipo);
                 }
-            } 
+            }         
         }
 
-        public void cambiarTipo(String tipo)
-        {
+        public void agregarTipo(String tipo) {
+
             if (tipo != null || tipo != "")
             {
                 setTipo(tipo);
             }
             else
             {
-                throw new ArgumentException("Categoria Tema (Cambiar Tipo) - Ingrese un tipo valido");
+                throw new ArgumentNullException("Texto invalido. No se agregó el tipo nuevo.");
             }
         }
-
-
     }
 }
