@@ -1,39 +1,42 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterLibro.master.cs" Inherits="Prototipo1DG.MasterLibro" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/MasterPageLibro.Master.cs" Inherits="Web_App_Libro.Site1" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head id="Head1" runat="server">
-       <meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<meta name="description" content="Fullscreen Pageflip Layout with BookBlock" />
+        <meta content="" scheme="UTF-8" />        
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+		<meta name="description" content="BookBlock" />
 		<meta name="keywords" content="fullscreen pageflip, booklet, layout, bookblock, jquery plugin, flipboard layout, sidebar menu" />
-		<link rel="stylesheet" type="text/css" href="dist/css/jquery.jscrollpane.custom.css" />
-		<link rel="stylesheet" type="text/css" href="dist/css/bookblock.css" />
-		<link rel="stylesheet" type="text/css" href="dist/css/custom.css" />
-		<script src="dist/js/modernizr.custom.79639.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
         <title>Libro C.E.J.A.</title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <div id="container" class="container">	
+    <form id="container" class="container" runat="server">	
 
 			<div class="menu-panel">
-				<h3>
-               <img src="dist/img/Logo%20alpha2.png" width="50px"  ImageAlign="Left" />
-                
-                Libro
-                </h3>
-				<ul id="menu-toc" class="menu-toc">
-					<li class="menu-toc-current"><a href="../../Paginas.aspx">Hoja Principal</a></li>
-                    <li><a href="#item3">Hoja 1</a></li>
+				<h3><asp:Image ID="logo" src="imag/Logo%20alpha2.png" width="50px" ImageAlign="Left" runat="server" />Libro</h3>
+            
+            <ul id="menu-toc" class="menu-toc">
+
+					<li class="menu-toc-current"><a href="PaginaPrincipal.aspx">Hoja Principal</a></li>
+					<li><a href="#item2">Hoja 1</a></li>
 					<li><a href="#item3">Hoja 2</a></li>
 					<li><a href="#item4">Hoja 3</a></li>
 					<li><a href="#item5">Hoja 4</a></li>
-                    
 				</ul>
+                <asp:Menu ID="Menu1" runat="server">
+                    <Items>
+                        <asp:MenuItem Text="Un link" Value="link" NavigateUrl="~/WebForm1.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Otro link" Value="link" NavigateUrl="~/WebForm2.aspx"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
 			</div>
             <div class="bb-custom-wrapper">
             <div id="bb-bookblock" class="bb-bookblock">
@@ -41,24 +44,28 @@
         
              </asp:ContentPlaceHolder>
              </div>
-        	<nav>
+
+            
+           <nav>
+                
 					<span id="bb-nav-prev">&larr;</span>
 					<span id="bb-nav-next">&rarr;</span>
-				</nav>
-
-				<span id="tblcontents" class="menu-button">Table of Contents</span>
+		   </nav>
+                <span id="tblcontents" class="menu-button">Table of Contents</span>
+             
+        	    
+				
 
 			</div>
 				
-		</div><!-- /container -->
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="dist/js/jquery.mousewheel.js"></script>
-		<script src="dist/js/jquery.jscrollpane.min.js"></script>
-		<script src="dist/js/jquerypp.custom.js"></script>
-		<script src="dist/js/jquery.bookblock.js"></script>
-		<script src="dist/js/page.js"></script>
-		<script>
+		</form><!-- /container -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+		<script type="text/javascript" src="js/jquerypp.custom.js"></script>
+		<script type="text/javascript" src="js/jquery.bookblock.js"></script>
+		<script type="text/javascript" src="js/page.js"></script>
+		<script type="text/javascript">
 		    $(function () {
 
 		        Page.init();

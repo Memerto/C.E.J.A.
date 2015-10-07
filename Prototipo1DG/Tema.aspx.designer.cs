@@ -22,39 +22,66 @@ namespace Prototipo1DG {
         protected global::System.Web.UI.WebControls.Label lblTema;
         
         /// <summary>
-        /// Control lblAutor.
+        /// Control lnkAdjuntar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAutor;
+        protected global::System.Web.UI.WebControls.LinkButton lnkAdjuntar;
         
         /// <summary>
-        /// Control lblPregunta.
+        /// Control lblCantRespuestas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPregunta;
+        protected global::System.Web.UI.WebControls.Label lblCantRespuestas;
         
         /// <summary>
-        /// Control lblBien.
+        /// Control lblPostCounter.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBien;
+        protected global::System.Web.UI.WebControls.Label lblPostCounter;
         
         /// <summary>
-        /// Control lblMal.
+        /// Control lnkApruebo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMal;
+        protected global::System.Web.UI.WebControls.LinkButton lnkApruebo;
+        
+        /// <summary>
+        /// Control lblSumaA.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSumaA;
+        
+        /// <summary>
+        /// Control lnkDesapruebo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkDesapruebo;
+        
+        /// <summary>
+        /// Control lblSumaD.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSumaD;
     }
 }
