@@ -21,15 +21,15 @@
         </script>
     
      
-	
+    
     <style type="text/css">
         
         .gapVertical
          {
-			
+            
              width: 550px;
              height: 20px;
-			
+            
          }
 
         .generalWidth {
@@ -64,53 +64,37 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-	
+    
     <div>
+        
+        <section class="content-header">
+          
+          <ol class="breadcrumb">
+            <li><a href="#"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalPostear" aria-hidden="false">
+                    <span class="glyphicon glyphicon-envelope"> Postear</span></button></a></li>
+          </ol>
+        </section>
 
     <div>
-		<table>
-			<tr>
-				<td><asp:Label ID="lblTema" runat="server" text="<h1>.NET</h1>"></asp:Label></td>
-			</tr>
-		</table>
-	</div>
+        <table>
+            <tr>
+                <td><asp:Label ID="lblTema" runat="server" text="<h1>.NET</h1>"></asp:Label></td>
+            </tr>
+        </table>
+    </div>
+        
+        
+         <div>
+        <table>
+            <tr>
+                <td>Posts<asp:Label ID="lblCantRespuestas" runat="server">
+                <span> +<asp:Label ID="lblPostCounter" runat="server" Text="2"></asp:Label></span></asp:Label></td>
+            </tr>
+        </table>
         
         <hr class="horizontalLine"/>
         
-    <div>
-		<textarea id="txaRespuesta"  class="generalWidth" rows="10" placeholder="Escribe tu post..."></textarea>
-	</div>
-	
-	<div class="gapVertical"></div>
-	
-	<div>
-		<table class="especificWidth">
-			<tr>
-            <td><a href="#" class="btn btn-primary">Postear</a></td>
-			
-			<td>
-				<asp:LinkButton ID="lnkAdjuntar" runat="server">Adjuntar</asp:LinkButton></td>
-			</tr>
-			
-		</table>
-	</div>
-	
-	<div class="gapVertical"></div>
         
-        
-        
-	
-	<div>
-		<table>
-			<tr>
-				<td>Posts<asp:Label ID="lblCantRespuestas" runat="server">
-				<span> +<asp:Label ID="lblPostCounter" runat="server" Text="2"></asp:Label></span></asp:Label></td>
-			</tr>
-		</table>
-		
-		<hr class="horizontalLine"/>
-        
-		
         <div>
             <div class="row">
                 <div class="col-lg-5">
@@ -138,30 +122,30 @@
         
        
         <hr class="horizontalLine"/>
-		
-		
-		<div class="generalWidth">
-			<p>Microsoft started development of .NET Framework in the late 1990s, 
+        
+        
+        <div class="generalWidth">
+            <p id="txtComentario">Microsoft started development of .NET Framework in the late 1990s, 
                originally under the name of Next Generation Windows Services (NGWS). 
                By late 2000, the first beta versions of .NET 1.0 were released.</p>
-		</div>
+        </div>
         
         
         <hr class="horizontalLine"/>
         
         <div>
-		    <table>
-			<tr>
+            <table>
+            <tr>
             <td style="width: 85px"><a href="javascript:void(0);" id="showHide">Responder...</a></td> <!--#hideDiv id="hide/show"-->
-			
-			<td align="left"class="widthTD"><asp:LinkButton ID="lnkApruebo" runat="server"><span class="glyphicon glyphicon-thumbs-up"></span> Apruebo<span> +<asp:Label ID="lblSumaA" runat="server" Text="10"></asp:Label></span></asp:LinkButton></td>
+            
+            <td align="left"class="widthTD"><asp:LinkButton ID="lnkApruebo" runat="server"><span class="glyphicon glyphicon-thumbs-up"></span> Apruebo<span> +<asp:Label ID="lblSumaA" runat="server" Text="10"></asp:Label></span></asp:LinkButton></td>
                 
             <td style="width: 120px" align="left"><asp:LinkButton ID="lnkDesapruebo" runat="server"><span class="glyphicon glyphicon-thumbs-down"></span> Desapruebo<span> +<asp:Label ID="lblSumaD" runat="server" Text="5"></asp:Label></span></asp:LinkButton></td>
-			</tr>
+            </tr>
 
-		    </table>
+            </table>
 
-		</div>
+        </div>
         
         <div style="height: 10px"></div>
            
@@ -173,14 +157,36 @@
             <table>
                 <tr>
                     <td><a href="#" class="glyphicon glyphicon-file"></a></td>
-                    <td><textarea id="Textarea1" placeholder="Responder..." class="commentSize"></textarea></td>
+                    <td><textarea id="Textarea2" placeholder="Responder..." class="commentSize"></textarea></td>
                     <td style="width: 50px" align="right"><a href="#" class="btn btn-primary btn-xs">Enviar</a> </td>
                 </tr>
             </table>
             
         </div>
 
-	</div>
+    </div>
+        
+        <hr class="horizontalLine"/>
+        
+    <!--
+    <div>
+        <textarea id="txaRespuesta"  class="generalWidth" rows="10" placeholder="Escribe tu post..."></textarea>
+    </div>
+    
+    <div class="gapVertical"></div>
+    
+    <div>
+        <table class="especificWidth">
+            <tr>
+            <td><a href="#" class="btn btn-primary">Postear</a></td>
+            
+            <td>
+                <asp:LinkButton ID="lnkAdjuntar" runat="server">Adjuntar</asp:LinkButton></td>
+            </tr>
+            
+        </table>
+    </div>
+        -->
 
     </div>
 
