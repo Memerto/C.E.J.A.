@@ -3,8 +3,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8" />
+    
+      <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+      
+      <script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+    
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>C.E.J.A. | Usuario</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
@@ -19,6 +24,20 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+      
+      <style>
+          
+          .modalDiv {
+              width: 550px;
+              
+          }
+
+             
+
+
+          
+           
+      </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,7 +66,8 @@
           <span class="logo-mini"><b>CE</b>JA</span>
           <!-- logo for regular state and mobile devices -->
           <span class="logo-mini" src="../../dist/img/Logo%20transparente.png" width="45px" ImageAlign="Left"/></span>
-
+         
+            <!--HEADER STARTS HERE-->
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -174,7 +194,7 @@
                 <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
               </ul>
             </li>
-            <li class="treeview">
+            <li class="#">
               <a href="../../Paginas.aspx">
                 <i class="fa fa-book"></i>
                 <span>Ver Libro</span><i class="fa fa-angle-left pull-right"></i>
@@ -189,25 +209,28 @@
       <!-- Content Wrapper. Contains page content -->
       <div class="content-wrapper">
         <!-- Content Header (Page header) -->
-        <section class="content-header">
-          <h1>
-            Pagina en Blanco
-            <small>Y se rellenara con otras cositas</small>
-          </h1>
+        
+          <!--MENU TREE-->
+          <!--../../Tema.aspx-->
+           
+          <!-- Header Master Modal
+          <section class="content-header">
+          
           <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-home"></i> Inicio</a></li>
-            <li><a href="#">Relleno</a></li>
-            <li class="active">Pagina en Blanco</li>
+            <li><a href="#"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalPostear" aria-hidden="false">
+                    <span class="glyphicon glyphicon-envelope"> Postear</span></button></a></li>
           </ol>
         </section>
+              -->
+        
 
         <!-- Main content -->
         <section class="content">
 
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"/>
         
-        </asp:ContentPlaceHolder>
-         <!--Inicio del modal Post-->
+            
+            <!--Inicio del modal Post-->
             <!--Puse un Modal de Post para que el usario pueda postear desde
                 cualquier parte, para que así no tenga que ir al Tema directamente
                 y perder tiempo, que sea cómodo. Obviamente si quiere revisar de manera
@@ -221,6 +244,7 @@
                         
                        
                         
+                        <!--
                         <div class="form-group">
                             <label for="select" class="col-lg-2 control-label" style="width: 150px">Tema a seleccionar</label>
                             <div class="col-lg-10" style="width: 150px">
@@ -237,18 +261,39 @@
                             </div>
 
                         </div>
+                        -->
                         
 
                     </div>
                     
                     <div class="modal-body">
-                        <textarea id="txaModal" cols="91" rows="5" placeholder="Qué deseas postear?"></textarea>
+                        <textarea id="txaModal" cols="91" rows="5" placeholder="Escribe tu post..."></textarea>
+                        
+
 
                     </div>
                     
+                    <!--
                     <div class="modal-footer">
+                       <asp:LinkButton ID="lnkAdjuntar" runat="server">Adjuntar </asp:LinkButton>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                         <button type="button" class="btn btn-primary">Enviar</button>
+
+                    </div>
+                    -->
+                    
+                    <div class="modal-footer">
+                       
+
+                       <table>
+                           <tr>
+                               <td align="left"><asp:LinkButton ID="LinkButton1" runat="server">Adjuntar </asp:LinkButton></td>
+                               <td class="modalDiv" align="right">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                   <button type="button" class="btn btn-primary">Enviar</button>
+                               </td>
+                           </tr>
+                       </table>
 
                     </div>
 
