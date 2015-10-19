@@ -231,11 +231,7 @@
         
             
             <!--Inicio del modal Post-->
-            <!--Puse un Modal de Post para que el usario pueda postear desde
-                cualquier parte, para que así no tenga que ir al Tema directamente
-                y perder tiempo, que sea cómodo. Obviamente si quiere revisar de manera
-                más detalladan debe ir al Tema directamente.-->
-             
+            
             <div class="modal fade" id="modalPostear" tabindex="-1" role="dialog" aria-labelledby="modalPostear">
             <div class="modal-dialog" role="document">
                 
