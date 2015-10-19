@@ -31,13 +31,49 @@ namespace Prototipo1DG {
         protected global::System.Web.UI.WebControls.Label lblCantRespuestas;
         
         /// <summary>
-        /// lblPostCounter control.
+        /// lblContadorPost control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPostCounter;
+        protected global::System.Web.UI.WebControls.Label lblContadorPost;
+        
+        /// <summary>
+        /// lblNombreUsuario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNombreUsuario;
+        
+        /// <summary>
+        /// lblActividadUsuario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblActividadUsuario;
+        
+        /// <summary>
+        /// lblCantPostUsuario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCantPostUsuario;
+        
+        /// <summary>
+        /// lblRegistradoDesde control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRegistradoDesde;
         
         /// <summary>
         /// lnkApruebo control.
