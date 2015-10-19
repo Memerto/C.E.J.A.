@@ -8,7 +8,7 @@ namespace Libreria
     [Serializable]
     class Propuesta
     {
-        private String _id;
+        private String _id; //ID compuesta, primeros 4 digitos es su id, los otros 4 es la posicion en el ArrayList.
         private String _idPropRelacionada;
         private TipoPropuesta _tipoPropuesta;
         private ArrayList _calificaciones; //Calificaciones
@@ -33,6 +33,7 @@ namespace Libreria
         public void setTexto(String texto) { _texto = texto; }
         public void setFechaCreacion(DateTime fechaCreacion) { _fechaCreacion = fechaCreacion; }
         public void setFechaModificacion(DateTime fechaModificacion) { _fechaModificacione = fechaModificacion; }
+
         public String getID() { return _id; }
         public String getIdPropuestaRelacionada() { return _idPropRelacionada; }
         public TipoPropuesta getTipoPropuesta() { return _tipoPropuesta; }
