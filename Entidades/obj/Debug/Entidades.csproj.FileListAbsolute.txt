@@ -1,0 +1,4 @@
+D:\Escritorio\C.E.J.A 2\Entidades\bin\Debug\Entidades.dll
+D:\Escritorio\C.E.J.A 2\Entidades\bin\Debug\Entidades.pdb
+D:\Escritorio\C.E.J.A 2\Entidades\obj\Debug\Entidades.dll
+D:\Escritorio\C.E.J.A 2\Entidades\obj\Debug\Entidades.pdb

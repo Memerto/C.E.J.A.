@@ -1,0 +1,8 @@
+D:\Escritorio\C.E.J.A 2\Dato\obj\Debug\Dato.csprojResolveAssemblyReference.cache
+D:\Escritorio\C.E.J.A 2\Dato\bin\Debug\Dato.dll
+D:\Escritorio\C.E.J.A 2\Dato\bin\Debug\Dato.pdb
+D:\Escritorio\C.E.J.A 2\Dato\bin\Debug\Entidades.dll
+D:\Escritorio\C.E.J.A 2\Dato\bin\Debug\Oracle.DataAccess.dll
+D:\Escritorio\C.E.J.A 2\Dato\bin\Debug\Entidades.pdb
+D:\Escritorio\C.E.J.A 2\Dato\obj\Debug\Dato.dll
+D:\Escritorio\C.E.J.A 2\Dato\obj\Debug\Dato.pdb
