@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Libreria
 {
-    class Pagina
+    public class Pagina
     {
         private int _id;
         private String _titulo;
@@ -104,19 +104,44 @@ namespace Libreria
 
         public void agregarPropuesta(Propuesta propuesta) {
 
-            getTema().agregarPropuesta(propuesta);
+            if (propuesta.getID() == "0000" || propuesta == null)
+            {
+                throw new ArgumentNullException("Pagina (Agregar Propuesta) - Propuesta invalida.");
+            }
+            else
+            {
+                Tema tema = getTema();
+                tema.agregarPropuesta(propuesta);
+                setTema(tema);
+            }
+            
         }
 
         public void eliminarPropuesta(Propuesta propuesta) {
 
-            getTema().eliminarPropuesta(propuesta);
+            if (propuesta.getID() == "0000" || propuesta == null)
+            {
+                throw new ArgumentNullException("Pagina (Eliminar Propuesta) - Propuesta invalida.");
+            }
+            else
+            {
+                Tema tema = getTema();
+                tema.eliminarPropuesta(propuesta);
+                setTema(tema);
+            } 
         }
 
         public void actualizarCantidadesAprobDesaprob(TipoPropuesta tipo) {
 
-            setCantidadAprobacion(getTema().obtenerCantidadAprobacion(getTema().obtenerMejorPropuesta(tipo)));
-            setCantidadAprobacion(getTema().obtenerCantidadDesaprobacion(getTema().obtenerMejorPropuesta(tipo)));
+            if (tipo == null || tipo.getID() <= 0)
+            {
+                throw new ArgumentNullException("Propuesta (Actualizar Cantidades de Aprob/Desaporb) - Tipo Propuesta invalido.");
+            }
+            else
+            {
+                setCantidadAprobacion(getTema().obtenerCantidadAprobacion(getTema().obtenerMejorPropuesta(tipo)));
+                setCantidadAprobacion(getTema().obtenerCantidadDesaprobacion(getTema().obtenerMejorPropuesta(tipo)));
+            }
         }
-
     }
 }

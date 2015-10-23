@@ -7,7 +7,7 @@ using System.Collections;
 namespace Libreria
 {
     [Serializable]
-    class Usuario : Visitante
+    public class Usuario : Visitante
     {
         private String _id;
         private Boolean _admin;

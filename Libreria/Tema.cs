@@ -6,7 +6,7 @@ using System.Text;
 namespace Libreria
 {
     [Serializable]
-    class Tema
+    public class Tema
     {
         private int _id;
         private ArrayList _posts; //Contiene Posts.

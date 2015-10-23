@@ -6,7 +6,7 @@ using System.Text;
 namespace Libreria
 {
     [Serializable]
-    class Seccion
+    public class Seccion
     {
         private int _id;
         private String _nombre;

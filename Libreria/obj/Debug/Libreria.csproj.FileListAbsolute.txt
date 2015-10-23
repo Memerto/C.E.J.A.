@@ -2,3 +2,7 @@ C:\C.E.J.A\Libreria\bin\Debug\Libreria.dll
 C:\C.E.J.A\Libreria\bin\Debug\Libreria.pdb
 C:\C.E.J.A\Libreria\obj\Debug\Libreria.dll
 C:\C.E.J.A\Libreria\obj\Debug\Libreria.pdb
+D:\Escritorio\C.E.J.A\Libreria\obj\Debug\Libreria.dll
+D:\Escritorio\C.E.J.A\Libreria\bin\Debug\Libreria.dll
+D:\Escritorio\C.E.J.A\Libreria\bin\Debug\Libreria.pdb
+D:\Escritorio\C.E.J.A\Libreria\obj\Debug\Libreria.pdb

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Libreria
 {
-    class Categoria
+    public class Categoria
     {
         private int _id;
         private String _tipo;

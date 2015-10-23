@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/MasterPageLibro.Master.cs" Inherits="Web_App_Libro.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/MasterPageLibro.Master.cs" Inherits="Prototipo1DG.Home" %>
 
 <!DOCTYPE>
 

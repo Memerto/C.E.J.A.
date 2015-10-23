@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace Libreria
 {
-    class Foro
+    public class Foro
     {
         private int _id;
         private ArrayList _secciones;
@@ -51,8 +52,22 @@ namespace Libreria
 
         public void actualizarPagina() { }
 
-        public void listarSecciones() { }
+        public void listarSecciones() {
 
-        
+            ArrayList secciones = getSecciones();
+            Seccion seccion;
+            String nombre;
+            StringBuilder sb = new StringBuilder();
+
+            for (int i = 0; i < secciones.Count; i++)
+            {
+                seccion = (Seccion)secciones[i];
+                nombre = seccion.getNombre();
+
+
+            }
+        }
+
     }
+       
 }

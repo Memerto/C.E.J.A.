@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Libreria
 {
-    class Administrador : Usuario
+    public class Administrador : Usuario
     {
 
         public Administrador(String id, Boolean activo, String contrasena, String apodo, String correo, String ocupacion, ArrayList intereses)

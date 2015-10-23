@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Libreria
 {
-    class Libro
+    public class Libro
     {
         private ArrayList _paginas;
         private String _nombre;

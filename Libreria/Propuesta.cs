@@ -6,7 +6,7 @@ using System.Text;
 namespace Libreria
 {
     [Serializable]
-    class Propuesta
+    public class Propuesta
     {
         private String _id; //ID compuesta, primeros 4 digitos es su id, los otros 4 es la posicion en el ArrayList.
         private String _idPropRelacionada;

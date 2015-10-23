@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Libreria
 {
-    class Reporte
+    public class Reporte
     {
         private int _id;
         private int _idPost;

@@ -6,7 +6,7 @@ using System.Text;
 namespace Libreria
 {
     [Serializable]
-    class Calificacion
+    public class Calificacion
     {
         private int _id;
         private Usuario _usuario;
