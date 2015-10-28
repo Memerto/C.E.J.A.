@@ -8,7 +8,7 @@ namespace Libreria
     [Serializable]
     class Tema
     {
-        private int _id;
+        private String _id; //ID compuesta, primeros 4 digitos es su id, los otros 4 es la posicion en el ArrayList.
         private ArrayList _posts; //Contiene Posts.
         private ArrayList _propuestas; //Contiene Propuestas
         private ArrayList _tags; //Contiene Tags.
@@ -19,7 +19,7 @@ namespace Libreria
 
         #region Getters y Setters
 
-        public void setID(int id) { _id = id; }
+        public void setID(String id) { _id = id; }
         public void setPosts(ArrayList posts) { _posts = posts; }
         public void setPropuestas(ArrayList propuestas) { _propuestas = propuestas; }
         public void setTags(ArrayList tags) { _tags = tags; }
@@ -28,7 +28,7 @@ namespace Libreria
         public void setFechaCreacion(DateTime fechaCreacion) { _fechaCreacion = fechaCreacion; }
         public void setFechaModificacion(DateTime fechaModificacion) { _fechaModificacion = fechaModificacion; }
 
-        public int getID() { return _id; }
+        public String getID() { return _id; }
         public ArrayList getPosts() { return _posts; }
         public ArrayList getPropuestas() { return _propuestas; }
         public ArrayList getTags() { return _tags; }
@@ -41,7 +41,7 @@ namespace Libreria
 
         public Tema() {
 
-            setID(0);
+            setID("0000");
             setPosts(new ArrayList());
             setPropuestas(new ArrayList());
             setTags(new ArrayList());
@@ -51,9 +51,9 @@ namespace Libreria
             setFechaModificacion(DateTime.Now);
         }
 
-        public Tema(int id,String titulo,Categoria categoria) {
+        public Tema(String id,String titulo,Categoria categoria) {
 
-            if (id == 0)
+            if (id == "0000")
             {
                 throw new ArgumentNullException("Constructor Tema - ID invalida.");
             }
@@ -84,9 +84,9 @@ namespace Libreria
             }
         }
 
-        public Tema(int id,ArrayList tags,String titulo,Categoria categoria){
+        public Tema(String id,ArrayList tags,String titulo,Categoria categoria){
         
-            if (id == 0)
+            if (id == "0000")
 	        {
 		        throw new ArgumentNullException("Constructor Tema - ID invalida.");
 	        }

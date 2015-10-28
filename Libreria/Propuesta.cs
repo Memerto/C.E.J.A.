@@ -66,6 +66,7 @@ namespace Libreria
 
         public Propuesta(String id, TipoPropuesta tipoPropuesta, Boolean preAprobada, Boolean aprobada, String texto)
         {
+            
             if (id == "0000")
             {
                 throw new ArgumentNullException("Constructor Propuesta - ID invalido.");
