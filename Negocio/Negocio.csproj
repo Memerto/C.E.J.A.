@@ -40,7 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="NCalificacion.cs" />
+    <Compile Include="NCategoria.cs" />
+    <Compile Include="NPropuesta.cs" />
+    <Compile Include="NReporte.cs" />
+    <Compile Include="NTipoPropuesta.cs" />
+    <Compile Include="NForo.cs" />
+    <Compile Include="NLibro.cs" />
+    <Compile Include="NPagina.cs" />
+    <Compile Include="NPost.cs" />
+    <Compile Include="NSeccion.cs" />
+    <Compile Include="NTema.cs" />
+    <Compile Include="NTipoReporte.cs" />
+    <Compile Include="NUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
