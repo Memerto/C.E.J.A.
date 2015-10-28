@@ -164,7 +164,7 @@
                   <li><a href="../../Hijo1.aspx"><i class="fa fa-circle-o"></i> Programacion <i class="fa fa-angle-left pull-right"></i></a>
                     <ul class="treeview-menu">
                         <li><a href="../../Tema.aspx"><i class="fa fa-circle-o"></i> .NET</a></li>
-                        <li><a href="../../Tema.aspx"><i class="fa fa-circle-o"></i> Java</a></li>
+                        <li><a href="../../TemaJava.aspx"><i class="fa fa-circle-o"></i> Java</a></li>
                         <li><a href="../../Tema.aspx"><i class="fa fa-circle-o"></i> Arduino</a></li>
                     </ul>
                     </li>
@@ -198,6 +198,7 @@
               <a href="../../Paginas.aspx">
                 <i class="fa fa-book"></i>
                 <span>Ver Libro</span><i class="fa fa-angle-left pull-right"></i>
+                </a>
           </li>
           </ul>
         </section>
