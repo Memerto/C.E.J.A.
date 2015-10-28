@@ -22,7 +22,7 @@ namespace Libreria
 
         public void eliminarPost(int id) { }
 
-        public Tema crearTema(int id,String titulo,Categoria categoria) {
+        public Tema crearTema(String id,String titulo,Categoria categoria) {
 
             Tema tema = new Tema(id, titulo, categoria);
             return tema;

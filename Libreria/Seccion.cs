@@ -35,7 +35,7 @@ namespace Libreria
         public Boolean agregarTema(Tema tema) {
 
             ArrayList temas = getTemas();
-            if (tema == null || tema.getID() == 0)
+            if (tema == null || tema.getID() == "0000")
             {
                 throw new ArgumentNullException("Seccion (Agregar Tema) - ID invalida.");
             }
@@ -60,7 +60,7 @@ namespace Libreria
         public Boolean eliminarTema(Tema tema) {
 
             ArrayList temas = getTemas();
-            if (tema == null || tema.getID() == 0)
+            if (tema == null || tema.getID() == "0000")
             {
                 throw new ArgumentNullException("Seccion (Agregar Tema) - ID invalida.");
             }

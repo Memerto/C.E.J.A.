@@ -28,3 +28,13 @@ C:\Users\Administrador\Documents\GitHub\C.E.J.A\Prototipo1DG\bin\Prototipo1DG.pd
 C:\Users\Administrador\Documents\GitHub\C.E.J.A\Prototipo1DG\obj\Debug\Prototipo1DG.csprojResolveAssemblyReference.cache
 C:\Users\Administrador\Documents\GitHub\C.E.J.A\Prototipo1DG\obj\Debug\Prototipo1DG.dll
 C:\Users\Administrador\Documents\GitHub\C.E.J.A\Prototipo1DG\obj\Debug\Prototipo1DG.pdb
+D:\Escritorio\C.E.J.A\Prototipo1DG\bin\Prototipo1DG.dll
+D:\Escritorio\C.E.J.A\Prototipo1DG\bin\Prototipo1DG.pdb
+D:\Escritorio\C.E.J.A\Prototipo1DG\bin\EntityFramework.dll
+D:\Escritorio\C.E.J.A\Prototipo1DG\bin\EntityFramework.SqlServer.dll
+D:\Escritorio\C.E.J.A\Prototipo1DG\bin\Oracle.ManagedDataAccess.dll
+D:\Escritorio\C.E.J.A\Prototipo1DG\bin\EntityFramework.xml
+D:\Escritorio\C.E.J.A\Prototipo1DG\bin\EntityFramework.SqlServer.xml
+D:\Escritorio\C.E.J.A\Prototipo1DG\obj\Debug\Prototipo1DG.csprojResolveAssemblyReference.cache
+D:\Escritorio\C.E.J.A\Prototipo1DG\obj\Debug\Prototipo1DG.dll
+D:\Escritorio\C.E.J.A\Prototipo1DG\obj\Debug\Prototipo1DG.pdb
