@@ -2,3 +2,14 @@ C:\C.E.J.A\Libreria\bin\Debug\Libreria.dll
 C:\C.E.J.A\Libreria\bin\Debug\Libreria.pdb
 C:\C.E.J.A\Libreria\obj\Debug\Libreria.dll
 C:\C.E.J.A\Libreria\obj\Debug\Libreria.pdb
+D:\Escritorio\C.E.J.A\Libreria\obj\Debug\Libreria.csprojResolveAssemblyReference.cache
+D:\Escritorio\C.E.J.A\Libreria\obj\Debug\Libreria.dll
+D:\Escritorio\C.E.J.A\Libreria\bin\Debug\Libreria.dll.config
+D:\Escritorio\C.E.J.A\Libreria\bin\Debug\Libreria.dll
+D:\Escritorio\C.E.J.A\Libreria\bin\Debug\Libreria.pdb
+D:\Escritorio\C.E.J.A\Libreria\bin\Debug\EntityFramework.dll
+D:\Escritorio\C.E.J.A\Libreria\bin\Debug\EntityFramework.SqlServer.dll
+D:\Escritorio\C.E.J.A\Libreria\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Escritorio\C.E.J.A\Libreria\bin\Debug\EntityFramework.xml
+D:\Escritorio\C.E.J.A\Libreria\bin\Debug\EntityFramework.SqlServer.xml
+D:\Escritorio\C.E.J.A\Libreria\obj\Debug\Libreria.pdb

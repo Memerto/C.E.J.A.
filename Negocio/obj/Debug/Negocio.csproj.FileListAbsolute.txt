@@ -1,0 +1,4 @@
+D:\Escritorio\C.E.J.A\Negocio\bin\Debug\Negocio.dll
+D:\Escritorio\C.E.J.A\Negocio\bin\Debug\Negocio.pdb
+D:\Escritorio\C.E.J.A\Negocio\obj\Debug\Negocio.dll
+D:\Escritorio\C.E.J.A\Negocio\obj\Debug\Negocio.pdb

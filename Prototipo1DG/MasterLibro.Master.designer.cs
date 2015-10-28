@@ -7,10 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Web_App_Libro {
+namespace Prototipo1DG {
     
     
-    public partial class Site1 {
+    public partial class MasterLibro {
         
         /// <summary>
         /// Control Head1.
