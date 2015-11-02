@@ -12,3 +12,14 @@ D:\Escritorio\C.E.J.A\Entidades\bin\Debug\EntityFramework.xml
 D:\Escritorio\C.E.J.A\Entidades\bin\Debug\EntityFramework.SqlServer.xml
 D:\Escritorio\C.E.J.A\Entidades\obj\Debug\Entidades.dll
 D:\Escritorio\C.E.J.A\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Entidades\bin\Debug\Entidades.dll.config
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Entidades\bin\Debug\Entidades.dll
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Entidades\bin\Debug\EntityFramework.dll
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Entidades\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Entidades\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Entidades\bin\Debug\EntityFramework.xml
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Entidades\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Entidades\obj\Debug\Entidades.dll
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Entidades\obj\Debug\Entidades.pdb

@@ -13,3 +13,14 @@ D:\Escritorio\C.E.J.A\Libreria\bin\Debug\Oracle.ManagedDataAccess.dll
 D:\Escritorio\C.E.J.A\Libreria\bin\Debug\EntityFramework.xml
 D:\Escritorio\C.E.J.A\Libreria\bin\Debug\EntityFramework.SqlServer.xml
 D:\Escritorio\C.E.J.A\Libreria\obj\Debug\Libreria.pdb
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Libreria\bin\Debug\Libreria.dll.config
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Libreria\bin\Debug\Libreria.dll
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Libreria\bin\Debug\Libreria.pdb
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Libreria\bin\Debug\EntityFramework.dll
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Libreria\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Libreria\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Libreria\bin\Debug\EntityFramework.xml
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Libreria\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Libreria\obj\Debug\Libreria.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Libreria\obj\Debug\Libreria.dll
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Libreria\obj\Debug\Libreria.pdb

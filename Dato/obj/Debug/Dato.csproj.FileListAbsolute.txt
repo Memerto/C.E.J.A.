@@ -20,3 +20,16 @@ D:\Escritorio\C.E.J.A\Dato\bin\Debug\EntityFramework.SqlServer.xml
 D:\Escritorio\C.E.J.A\Dato\obj\Debug\Dato.csprojResolveAssemblyReference.cache
 D:\Escritorio\C.E.J.A\Dato\obj\Debug\Dato.dll
 D:\Escritorio\C.E.J.A\Dato\obj\Debug\Dato.pdb
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Dato\bin\Debug\Dato.dll.config
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Dato\bin\Debug\Dato.dll
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Dato\bin\Debug\Dato.pdb
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Dato\bin\Debug\Entidades.dll
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Dato\bin\Debug\EntityFramework.dll
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Dato\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Dato\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Dato\bin\Debug\Entidades.pdb
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Dato\bin\Debug\EntityFramework.xml
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Dato\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Dato\obj\Debug\Dato.csprojResolveAssemblyReference.cache
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Dato\obj\Debug\Dato.dll
+C:\Users\Administrador\Documents\GitHub\C.E.J.A\Dato\obj\Debug\Dato.pdb

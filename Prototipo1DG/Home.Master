@@ -24,6 +24,22 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $("#toShowHide").hide();
+            $("#showHide").show();
+
+            $('#showHide').click(function () {
+                $("#toShowHide").slideToggle();
+            });
+
+        });
+
+        </script>
       
       <style>
           
@@ -31,6 +47,52 @@
               width: 550px;
               
           }
+          
+          .color
+          {
+              background-color:purple;
+              }
+              
+              .rectanglesSize
+              {
+                  width:100px;
+                  
+                  
+              }
+              
+              .gapVertical
+         {
+            
+             width: 550px;
+             height: 20px;
+            
+         }
+         
+         .textAreaSize
+         {
+             
+             max-width: 550px;
+             min-width: 550px;
+             max-height:106px;
+             min-height:106px;
+             
+         }
+         
+         .generalBox {
+            border: 1px solid;
+            border-radius: 5px;
+        }
+        
+        .gapVertical
+         {
+            
+             width: 550px;
+             height: 20px;
+            
+         }
+         
+          
+              
 
              
 
@@ -164,7 +226,7 @@
                   <li><a href="../../Hijo1.aspx"><i class="fa fa-circle-o"></i> Programacion <i class="fa fa-angle-left pull-right"></i></a>
                     <ul class="treeview-menu">
                         <li><a href="../../Tema.aspx"><i class="fa fa-circle-o"></i> .NET</a></li>
-                        <li><a href="../../TemaJava.aspx"><i class="fa fa-circle-o"></i> Java</a></li>
+                        <li><a href="../../Tema.aspx"><i class="fa fa-circle-o"></i> Java</a></li>
                         <li><a href="../../Tema.aspx"><i class="fa fa-circle-o"></i> Arduino</a></li>
                     </ul>
                     </li>
@@ -198,7 +260,6 @@
               <a href="../../Paginas.aspx">
                 <i class="fa fa-book"></i>
                 <span>Ver Libro</span><i class="fa fa-angle-left pull-right"></i>
-                </a>
           </li>
           </ul>
         </section>
@@ -238,10 +299,8 @@
                 
                 <div class="modal-content" >
                     <div class="modal-header">
-                        
-                       
-                        
-                        <!--
+                    
+                    <!--
                         <div class="form-group">
                             <label for="select" class="col-lg-2 control-label" style="width: 150px">Tema a seleccionar</label>
                             <div class="col-lg-10" style="width: 150px">
@@ -259,32 +318,94 @@
 
                         </div>
                         -->
-                        
-
                     </div>
                     
                     <div class="modal-body">
                         <textarea id="txaModal" cols="91" rows="5" placeholder="Escribe tu post..."></textarea>
-                        
-
-
                     </div>
                     
-                    <!--
-                    <div class="modal-footer">
-                       <asp:LinkButton ID="lnkAdjuntar" runat="server">Adjuntar </asp:LinkButton>
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary">Enviar</button>
-
-                    </div>
-                    -->
+                   
                     
                     <div class="modal-footer">
                        
 
                        <table>
                            <tr>
-                               <td align="left"><asp:LinkButton ID="LinkButton1" runat="server">Adjuntar </asp:LinkButton></td>
+                               <td align="left"><asp:LinkButton ID="lnkAdjuntarPost" runat="server">Adjuntar </asp:LinkButton></td>
+                               <td class="modalDiv" align="right">
+                                   <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                   <button type="button" class="btn btn-primary">Enviar</button>
+                               </td>
+                           </tr>
+                       </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div> 
+
+        <!--Inicio modal Proponer-->
+
+        <div class="modal fade" id="modalPropuesta" tabindex="-1" role="dialog" aria-labelledby="modalPropuesta">
+            <div class="modal-dialog" role="document">
+                
+                <div class="modal-content" >
+                    <div class="modal-header">
+                    
+                    <table>
+                    
+                    <tr>
+                    <td>
+                    <asp:TextBox ID="txtTituloPropuesta" runat="server" placeholder="Título"></asp:TextBox>
+                    </td>
+                    
+                    </tr>
+                    
+                    <tr class="gapVertical"></tr>
+
+                    <tr>
+                    
+                    <td class="rectanglesSize" align="left">
+                    <asp:DropDownList ID="ddlTipoPropuesta" runat="server" style=height:27px>
+                    <asp:ListItem>Tipo</asp:ListItem>
+                    <asp:ListItem>Oficial</asp:ListItem>
+                    <asp:ListItem>Simple</asp:ListItem>
+                    <asp:ListItem>Muy Simple</asp:ListItem>
+                    </asp:DropDownList>
+                    
+                    </td>
+                    </tr>
+                    </table>
+                    
+                    </div>
+                    
+                    <!--<div class="gapVertical"></div>-->
+                    
+                    <div class="modal-body">
+                        <textarea id="txaReseñaPropuesta" placeholder="Reseña..." class="textAreaSize"></textarea>
+                        <textarea id="txaPropuesta" cols="91" rows="5" placeholder="Escribe tu propuesta..." class="textAreaSize"></textarea>
+                     
+                     
+                   
+                    
+                    
+                    </div>
+
+                    
+                   
+                    
+                    <div class="modal-footer">
+                       
+
+                       <table>
+
+                       
+
+                           <tr>
+                               <td align="left"><asp:LinkButton ID="lnkAdjuntarPropuesta" runat="server">Adjuntar </asp:LinkButton></td>
                                <td class="modalDiv" align="right">
                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
                                    <button type="button" class="btn btn-primary">Enviar</button>
@@ -299,10 +420,100 @@
             </div>
 
         </div>
-        
+
+        <!--Modal Ver Propuestas-->
+
+         <div class="modal fade" id="modalVerPropuestas" tabindex="-1" role="dialog" aria-labelledby="modalVerPropuestas" >
+            <div class="modal-dialog" role="document">
+                
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                    <div>
+                    <table>
+
+                    <tr>
+                    <td>ID: <asp:Label ID="lblIDPropuesta" runat="server" Text="251opl"></asp:Label></td>
+                    </tr>
+
+                    <tr>
+                    <td>Usuario: <asp:Label ID="lblNombreUsuarioPropuesta" runat="server" Text="Petrovich Madnar"></asp:Label></td>
+                    </tr>
+                    
+                    </table>
+                    
+                    </div>
+                    
+                    <div class="modal-body" >
+
+                    <div class="generalBox">
+                    
+                    <!--disabled="disabled"-->
+                    
+                    <p id="parrafoPropuesta" ></p>The Entity Framework is a set of technologies in ADO.NET that support the development of data-oriented software applications. 
+                    Architects and developers of data-oriented applications have typically struggled with the need to achieve two very different objectives.</p>
+                    </div>
+
+                    
+
+                    
+                    <div>
+            <table class="marginLeft">
+            <tr>
+            <td style="width: 85px"><a href="javascript:void(0);" id="showHide">Responder...</a></td> 
             
-       
-         <!--Fin del modal Post-->
+            <td align="left"class="widthTD"><asp:LinkButton ID="lnkApruebo" runat="server"><span class="glyphicon glyphicon-thumbs-up"></span> Apruebo<span> +<asp:Label ID="lblSumaA" runat="server" Text="10"></asp:Label></span></asp:LinkButton></td>
+                
+           <td style="width: 120px" align="left"><asp:LinkButton ID="lnkDesapruebo" runat="server"><span class="glyphicon glyphicon-thumbs-down"></span> Desapruebo<span> +<asp:Label ID="lblSumaD" runat="server" Text="5"></asp:Label></span></asp:LinkButton></td>
+
+            <td align="left" style="width:100px">Calificaciones: <asp:Label ID="lblCantCalificaciones" runat="server" Text="10"></asp:Label></td>
+            
+           
+            
+            </tr>
+
+            </table>
+
+        </div>
+
+        <div class="gapVertical"></div>
+
+        <div class="generalWidth" id="toShowHide" style="display: none"> 
+            <table class="marginLeft">
+                <tr>
+                    <td ><a href="#" class="glyphicon glyphicon-file"></a></td>
+                    <td class="marginLeft"><textarea  id="txtRespuesta" placeholder="Responder..." class="commentSize"></textarea></td>
+                    <td style="width: 50px" align="right" ><a href="#" class="btn btn-primary btn-xs">Enviar</a> </td>
+                </tr>
+            </table>
+            
+        </div>
+                        
+                   
+                     
+                     
+                
+                    
+                   
+                    
+                    <div class="modal-footer">
+                       
+                       <table>
+                       <tr>
+                       <td style="width:500px" align="right"> <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button> Fecha de creación: <asp:Label ID="lblFechaCreacion" runat="server" Text="25/12/2015"></asp:Label></td>
+                       </tr>
+                       </table>
+                   
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+             <!--Fin del modal Post-->
 
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->
@@ -333,4 +544,171 @@
 </html>
 
     
+        
+            
+       
+         
+         
+         
+         
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
 

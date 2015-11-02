@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="Tema.aspx.cs" Inherits="Prototipo1DG.Tema" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     
-    <!--Algunos valores que van fijos los puse para indicar que ahí va un label,
-        que va a cambiar.-->
+    <!--
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
     <script type="text/javascript">
@@ -19,6 +18,7 @@
         });
 
         </script>
+        -->
     
      
     
@@ -90,7 +90,15 @@
         .marginBottom {
             margin-bottom: 10px;
         }
-
+        
+        .marginLeftRight{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        
+        .totalWidth
+        {
+            width:1107px;
         
 
     </style>
@@ -99,16 +107,53 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     
     
-    <section class="content-header" >
+    
+
+        
+         
+
+        <section class="content-header" >
           
           <ol class="breadcrumb" >
+
+          
+          <li>
+            <a href="#"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalPropuesta" aria-hidden="false">
+            <span class="glyphicon glyphicon-comment"> Proponer</span></button></a>
+            </li>
+            
+            
+            <!--Dropdownlist de Postear-->
             <li><a href="#"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalPostear" aria-hidden="false">
-                    <span class="glyphicon glyphicon-envelope"> Postear</span></button></a></li>
-          </ol>
+                <span class="glyphicon glyphicon-envelope"> Postear</span></button></a>
+            </li>
+            
+            
+            <!--Dropdownlist de Propuesta
+            <li>
+            <div class="dropdown"> 
+            <button class="btn btn-primary dropdown-toggle" style="height:46px" type="button" data-toggle="dropdown" style="font-weight: bold"><span class="glyphicon glyphicon-comment"></span> Propuestas
+            <span class="caret" ></span></button>
+            <ul class="dropdown-menu">
+            <li><a href="#"  data-toggle="modal" data-target="#modalPropuesta" aria-hidden="false">Proponer</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#modalVerPropuestas" aria-hidden="false">Ver Propuestas</a></li>
+            </ul>
+            </div>
+            </li>
+            -->
+            </ol>
         </section>
-    
-    
         
+    
+
+        
+      
+                
+        
+
+            
+    
+        <div class="gapVertical"></div>
         
 
     
@@ -127,7 +172,7 @@
     </div>
         
         
-    <div style="width: 1182px"> <!--1107px-->     
+    <div class="totalWidth"> <!--1107px style="width: 1107px"-->     
     
     <div>
              
@@ -175,7 +220,7 @@
         
         
         <div>
-            <p id="txtComentario" class="marginLeft" style="width: 1107px">
+            <p id="txtComentario" class="marginLeftRight" style="width: 1107px">
                Microsoft started development of .NET Framework in the late 1990s, 
                originally under the name of Next Generation Windows Services (NGWS). 
                By late 2000, the first beta versions of .NET 1.0 were released.
@@ -183,21 +228,29 @@
         </div>
         
         <hr class="horizontalLine"/>
+
+        <div class="marginLeft">
+            <a href="#" data-toggle="modal" data-target="#modalVerPropuestas" aria-hidden="false">Ver Propuesta</a>
+        
+        </div>
         
         
-        <div>
+       
+        <!--
+            <div>
             <table class="marginLeft">
             <tr>
-            <td style="width: 85px"><a href="javascript:void(0);" id="showHide">Responder...</a></td> <!--#hideDiv id="hide/show"-->
+            <td style="width: 85px"><a href="javascript:void(0);" id="showHide">Responder...</a></td> 
             
-            <!--<td align="left"class="widthTD"><asp:LinkButton ID="lnkApruebo" runat="server"><span class="glyphicon glyphicon-thumbs-up"></span> Apruebo<span> +<asp:Label ID="lblSumaA" runat="server" Text="10"></asp:Label></span></asp:LinkButton></td>-->
+            <td align="left"class="widthTD"><asp:LinkButton ID="lnkApruebo" runat="server"><span class="glyphicon glyphicon-thumbs-up"></span> Apruebo<span> +<asp:Label ID="lblSumaA" runat="server" Text="10"></asp:Label></span></asp:LinkButton></td>
                 
-            <!--<td style="width: 120px" align="left"><asp:LinkButton ID="lnkDesapruebo" runat="server"><span class="glyphicon glyphicon-thumbs-down"></span> Desapruebo<span> +<asp:Label ID="lblSumaD" runat="server" Text="5"></asp:Label></span></asp:LinkButton></td>-->
+           <td style="width: 120px" align="left"><asp:LinkButton ID="lnkDesapruebo" runat="server"><span class="glyphicon glyphicon-thumbs-down"></span> Desapruebo<span> +<asp:Label ID="lblSumaD" runat="server" Text="5"></asp:Label></span></asp:LinkButton></td>
             </tr>
 
             </table>
 
         </div>
+        -->
         
         <div style="height: 10px"></div>
            
@@ -205,6 +258,7 @@
         
         
         
+        <!--
         <div class="generalWidth" id="toShowHide" style="display: none"> 
             <table class="marginLeft">
                 <tr>
@@ -217,6 +271,7 @@
         </div>
 
     </div>
+    -->
         
        
         
