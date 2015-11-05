@@ -12,3 +12,4 @@ D:\Escritorio\C.E.J.A\Entidades\bin\Debug\EntityFramework.xml
 D:\Escritorio\C.E.J.A\Entidades\bin\Debug\EntityFramework.SqlServer.xml
 D:\Escritorio\C.E.J.A\Entidades\obj\Debug\Entidades.dll
 D:\Escritorio\C.E.J.A\Entidades\obj\Debug\Entidades.pdb
+D:\Escritorio\C.E.J.A\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
